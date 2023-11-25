@@ -3,14 +3,104 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="./main.js" defer></script>
     <title>Maksym Kostashenko</title>
   </head>
   <body>
 
     <header>
-      <h1>Hola</h1>
+      <a class="logo" href="#about">
+        <span role="img">👨🏻‍🏫</span>
+      </a>
+      <nav>
+        <ul>
+          <li>
+            <a href="#skills">Skills</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+        </ul>
+      </nav>
     </header>
-    <script type="module" src="/main.js"></script>
+    <main>
+      <section id="about">
+        <div class="about-container">
+          <form class="image-container">
+            <img src="./assets/image_117508865.JPG" alt="Maksym picture">
+            <h2>Let me introduce myself_</h2>
+          </form>
+          <div class="text-container">
+            <p>
+              I'm <strong>Maksym</strong>, a FullStack Developer who's committed to excellence, collaboration, and a constant drive for improvement. <br>
+              <br>If you are looking for someone who brings not only technical skills but also genuine commitment and a proactive <strong>attitude</strong>, I am ready to be part of your team. 
+            </p>
+            <ul>
+              <li>
+                <p>Maksym Kostashenko Kostashenko</p>
+              </li>
+              <li>
+                <p>FullStack Developer</p>
+              </li>
+              <li>
+                <a href="#">The Power MBA ⚡️</a>
+              </li>
+              <li>
+                <a href="mailto:mxkst.99@gmail.com">Send me a <span role="img">📧</span></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section id="skills">
+        <h2>Skills</h2>
+        <form class="search-bar">
+          <label for="filter"><span role="img">🔎</span></label>
+          <input type="text" name="filter" id="filter" onkeyup="filterBar()" placeholder="find by language..">
+        </form>
+        <ul id="elements">
+          <li>
+            <p> <strong>60%</strong> HTML5 <span role="img">📄</span></p>
+          </li>
+          <li>
+            <p> <strong>50%</strong> CSS3 <span role="img">🎨</span></p>
+          </li>
+          <li>
+            <p> <strong>20%</strong> JS <span role="img">🧙🏽‍♂️</span></p>
+          </li>
+          <li>
+            <p> <strong>10%</strong> NODEJS <span role="img">⚙️</span></p>
+          </li>
+          <li>
+            <p> <strong>10%</strong> REACTJS <span role="img">⚛️</span></p>
+          </li>
+          <li>
+            <p> <strong>5%</strong> MONGO <span role="img">📀</span></p>
+          </li>
+          <li>
+            <p> <strong>10%</strong> SQL <span role="img">💿</span></p>
+          </li>
+          <li>
+            <p> <strong>40%</strong> TESTING <span role="img">🧪</span></p>
+          </li>
+          <li>
+            <p> <strong>30%</strong> FIGMA <span role="img">📲</span></p>
+          </li>
+        </ul>
+      </section>
+      <section id="contact">
+        <h2>Contact</h2>
+        <div>
+          <a class="cta" href="mailto:mxkst.99@gmail.com">Hire me</a>
+          <a class="cta" href="" download="cv">Download CV</a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>Created by Maksym</p>
+    </footer>
+
   </body>
 </html>
